@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prestart": "NODE_ENV=production node_modules/.bin/webpack -p",
+    "build": "NODE_ENV=production node_modules/.bin/webpack -p",
+    "prestart": "NODE_ENV=development node_modules/.bin/webpack",
     "dev": "./node_modules/nodemon/bin/nodemon.js --exec npm run start --config nodemon.json",
     "start": "node index.js"
   },

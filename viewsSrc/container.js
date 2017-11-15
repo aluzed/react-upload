@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Link,
   Route,
-  Switch,
+  Switch, 
 } from 'react-router-dom';
 import Layout from './layout';
 import IndexPage from './pages/indexPage';
