@@ -9,7 +9,7 @@ import IndexPage from './pages/indexPage';
 import DetailsPage from './pages/detailsPage';
 import NotFoundPage from './pages/notFound';
 
-export default class AppRouter extends React.Component {
+export default class AppContainer extends React.Component {
   render() {
     return (
       <Layout>
