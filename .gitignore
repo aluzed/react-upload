@@ -1,2 +1,4 @@
 node_modules
 babel_cache
+test-server/uploads/*
+test-server/node_modules

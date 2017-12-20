@@ -19,14 +19,14 @@ if(process.env.NODE_ENV === 'production')
   }));
 
 module.exports = {
-  entry: path.join(__dirname, 'viewsSrc', 'app.js'),
+  entry: path.join(__dirname, 'src', 'app.js'),
   output: {
-    path: path.join(__dirname, 'public', 'js'),
-    filename: 'bundle.js'
+    path: path.join(__dirname, 'dist'),
+    filename: 'react-upload.js'
   },
   module: {
     loaders: [{
-      test: path.join(__dirname, 'viewsSrc'),
+      test: path.join(__dirname, 'src'),
       loader: ['babel-loader'],
       query: {
         cacheDirectory: 'babel_cache',

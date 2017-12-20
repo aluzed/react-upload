@@ -1,0 +1,15 @@
+{
+  "name": "react-upload-server-sample",
+  "version": "1.0.0",
+  "description": "React upload server script sample",
+  "main": "index.js",
+  "author": "Alexandre PENOMBRE",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.12",
+    "multer": "^1.3.0"
+  }
+}

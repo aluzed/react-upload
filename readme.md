@@ -1,19 +1,53 @@
-## Express-React-Client
+## React Upload
 
-Node Express with React Client.
+## Dependencies
 
-## Default URLs :
-[http://localhost:8080/views](http://localhost:8080/views)
-[http://localhost:8080/views/details](http://localhost:8080/views/details)
-[http://localhost:8080/views/blablabla](http://localhost:8080/views/blablabla)
+Use Bootstrap for the progress bar.
 
-## Build :
+## To Use
+```html
+...
+<head>
+  <link rel="stylesheet" href="/dist/react-upload.min.css">
+</head>
+<body>
+
+  <div id="main"></div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="/dist/react-upload.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      $ReactUpload('main', 'http://localhost:3000/send');
+    })
+  </script>
+</body>
 ```
-npm run build
+
+## Parameters
+
+When you call the $ReactUpload function :
+
+| Parameter      | Format | Description                                       |
+|----------------|:-------|:--------------------------------------------------|
+|Element Id      | String | Element where we will inject the upload container |
+|Destination Url | String | Url to send data                                  |
+
+## To test
+
+In a terminal
+
+```
+cd test-server
+npm i
+node index.js
 ```
 
-
-## Dev :
+In a second terminal
 ```
-npm run dev
+npm i -g http-server
+npm install
+http-server
 ```
