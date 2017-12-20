@@ -11,12 +11,11 @@ import ReactDOM from 'react-dom';
 import DropZone from './components/dropZone';
 // import A from './components/a';
 
-window.$ReactUpload = (el) => {
+window.$ReactUpload = (el, destPath) => {
   const injElement = document.getElementById(el);
-  const destPath   = injElement.getAttribute('data-dest');
 
   if(!destPath) {
-    throw new Error('Error, React Upload "data-dest" attribute cannot be null.');
+    throw new Error('Error, React Upload destPath parameter cannot be null.');
   }
 
   ReactDOM.render(<DropZone url={destPath} />, injElement);
