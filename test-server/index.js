@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://localhost:27017/uploads', { useMongoClient: true });
+mongoose.connect('mongodb://localhost:27017/uploads', { useNewUrlParser: true });
 
 
 const upload = multer({ dest: `./uploads/` });
