@@ -3,3 +3,4 @@ babel_cache
 test-server/uploads/*
 test-server/node_modules
 yarn.lock
+package-lock.json
