@@ -9,7 +9,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import DropZone from './components/dropZone';
-// import A from './components/a';
+import './react-upload.less';
 
 window.$ReactUpload = (el, destPath) => {
   const injElement = document.getElementById(el);
